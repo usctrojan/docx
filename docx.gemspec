@@ -12,7 +12,8 @@ Gem::Specification.new do |s|
   s.files       = Dir["README.md", "LICENSE.md", "lib/**/*.rb"]
   
   s.add_dependency 'nokogiri'
-  s.add_dependency 'rubyzip'
+  s.add_dependency 'rubyzip', '>= 1.0.0' # will load new rubyzip version
+
 
   s.add_development_dependency 'rspec'
 end
